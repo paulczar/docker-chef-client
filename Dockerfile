@@ -8,9 +8,7 @@ FROM ubuntu:12.04
 MAINTAINER Paul Czarkowski "paul@paulcz.net"
 
 RUN apt-get -yqq update \
-  && apt-get -yqq upgrade
-
-RUN apt-get -yqq install curl build-essential libxml2-dev libxslt-dev git
+  && apt-get -yqq install curl build-essential libxml2-dev libxslt-dev git
 
 RUN curl -L https://www.opscode.com/chef/install.sh \
   | bash > /dev/null
